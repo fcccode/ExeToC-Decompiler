@@ -45,7 +45,7 @@ public:
 #else
 #define KS_DLLEXPORTS	__declspec(dllexport)
 #endif
-//如果是一个单独的模块，我希望它是一个DLL，这里输出
+//If it is a separate module, I hope it is a DLL, output here
 
 #define KS_DECLARE_INTERFACE(N1,N2)	\
 		\
