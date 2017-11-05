@@ -1,7 +1,7 @@
 ///////////////////////////////////////////////////////////////
 //
 // LibScanner.h
-// Copyright(C) 1999-2005 LiuTaoTao，bookaa@rorsoft.com
+// Copyright(C) 1999-2005 LiuTaoTao锛宐ookaa@rorsoft.com
 //
 ///////////////////////////////////////////////////////////////
 //#include "..\..\LibScanner\LibScanner.H"
@@ -19,9 +19,9 @@
 
 typedef struct REFSYMBOL
 {
-	CHAR    RefSymbol[_MAX_PATH];	//引用符号
+	CHAR    RefSymbol[_MAX_PATH];	//Reference symbol
 	WORD	RefType;    //such as IMAGE_REL_I386_REL32
-	DWORD	RefOffset;				//引用在函数中的偏移
+	DWORD	RefOffset;				//Reference the offset in the function
 } *PREFSYMBOL;
 
 typedef struct tagFUNCTION_SYMBOL
@@ -30,8 +30,8 @@ typedef struct tagFUNCTION_SYMBOL
 	BYTE*		FunRawData;
 	CHAR		ObjName[_MAX_PATH];
 	CHAR		FunctionName[_MAX_PATH];
-	DWORD		RefCount;			//引用的符号次数
-	REFSYMBOL	RefInfo[];			//引用信息
+	DWORD		RefCount;			//The number of symbols referenced
+	REFSYMBOL	RefInfo[];			//Reference information
 }FUNCTION_SYMBOL,* PFUNCTION_SYMBOL;
 #pragma warning(default:4200)
 
@@ -53,6 +53,6 @@ KS_DECLARE_INTERFACE(LibScanner, LIBSCANNER)
 
 #endif	// _LIBSCANNER_H_
 
-/*	这里放接口函数的详细解释
+/*	Here's a detailed explanation of the interface function
 	
 */	
